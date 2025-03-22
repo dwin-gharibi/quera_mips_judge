@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  asm-container:
+    build:
+      context: ./solution
+      dockerfile: Dockerfile
+    container_name: "asm-container"
+    volumes:
+      - ./solution:/workspace
+      - ./test_cases:/test_cases
